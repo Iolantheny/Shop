@@ -1,0 +1,72 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\iolan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add gatsby-plugin-use-shopping-cart use-shopping-cart
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\iolan\AppData\Local\Microsoft\WindowsApps;C:\Users\iolan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\iolan\AppData\Roaming\npm;C:\Users\iolan\AppData\Local\Programs\MiKTeX\miktex\bin\x64\
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\iolan\Desktop\inne\FrontDevHero\project5\node_modules\@parcel\fs-search\fs-search.win32-x64-msvc.node'
+
+npm manifest: 
+  {
+    "name": "project5",
+    "version": "1.0.0",
+    "private": true,
+    "description": "project5",
+    "author": "Jolanta-J",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "@mdx-js/mdx": "^1.6.22",
+      "@mdx-js/react": "^1.6.22",
+      "gatsby": "^4.16.0",
+      "gatsby-image": "^3.11.0",
+      "gatsby-plugin-google-analytics": "^4.16.0",
+      "gatsby-plugin-image": "^2.16.1",
+      "gatsby-plugin-manifest": "^4.16.0",
+      "gatsby-plugin-mdx": "^3.16.1",
+      "gatsby-plugin-react-helmet": "^5.16.0",
+      "gatsby-plugin-sass": "^5.16.0",
+      "gatsby-plugin-sharp": "^4.16.1",
+      "gatsby-plugin-sitemap": "^5.16.0",
+      "gatsby-source-contentful": "^7.14.0",
+      "gatsby-source-filesystem": "^4.16.0",
+      "gatsby-transformer-remark": "^5.16.0",
+      "gatsby-transformer-sharp": "^4.16.0",
+      "react": "^18.1.0",
+      "react-dom": "^18.1.0",
+      "react-helmet": "^6.1.0",
+      "react-icons": "^4.4.0",
+      "sass": "^1.52.3"
+    },
+    "devDependencies": {
+      "@types/node": "^17.0.42",
+      "@types/react": "^18.0.12",
+      "@types/react-dom": "^18.0.5",
+      "typescript": "^4.7.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

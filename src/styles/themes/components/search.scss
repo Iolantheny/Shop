@@ -1,0 +1,73 @@
+.title{
+    text-align: center;
+    font-size: pxToRem(40);
+}
+
+.divs{
+    @include myFlex();
+    height: 6px;
+    @include center();
+
+    &__yellow{
+        width: 13%;
+        border-radius: 3px;
+        background-color: $c-LighteningYellow;
+        margin-right: 0.3%;
+    }
+
+    &__green{
+        width: 20%;
+        border-radius: 3px;
+        background-color: $c-Emerald;
+    }
+}
+
+.searched{
+    @include myFlex();
+    text-decoration: none;
+    margin: 5% 10%;
+    border: 1.5px $c-Black solid;
+    border-radius: 10px;
+    padding: 2%;
+    width: 40%;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+    
+    &__img{
+        width: 30%;
+    }
+
+    &__info{
+        color: $c-Black;
+        @include FlexOptions(60%);
+        text-align: center;
+
+        &--title{
+            font-size: pxToRem(30);
+            color: $c-CornflowerBlue;
+            margin: 0;
+        }
+
+        &--status{
+            font-size: pxToRem(20);
+        }
+
+        &--button{
+            float: right;
+            cursor: pointer;
+            border: none;
+            background-color: $c-RadicalRed;
+            color: $c-White;
+            margin: 1% 0;
+            border-radius: 6px;
+            padding: 4%;
+            width: 80%;
+            text-align: center;
+            font-size: pxToRem(17);
+        }
+    }
+}
+
+

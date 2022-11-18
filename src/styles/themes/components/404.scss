@@ -1,0 +1,30 @@
+.error{
+    color: $c-White;
+    text-align: -webkit-center;
+
+    &__pikachu{
+        width: 15%;
+    }
+
+    &__container{
+        position: absolute;
+        background-color: $c-Sushi;
+        border-radius: 10px;
+        left: 0; 
+        right: 0; 
+        margin: -6% auto 0;
+        width: 30%;
+
+        p{
+            margin: 5% auto 15%;
+        }
+
+        &--link{
+            text-decoration: none;
+            background-color: $c-RadicalRed;
+            width: 50%;
+            color: $c-White;
+            padding: 3%;
+        }
+    }
+}

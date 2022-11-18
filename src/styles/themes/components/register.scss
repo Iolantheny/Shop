@@ -1,0 +1,59 @@
+.register{
+    @include myFlex();
+    @include FlexOptions(100%, wrap);
+    background-color: $c-CornflowerBlue;
+    margin: 5% 25%;
+    padding: 3%;
+    border-radius: 20px;
+
+    &__title{
+        color: $c-White;
+        font-size: pxToRem(30);
+        @include FlexOptions(100%);
+        text-align: -webkit-center;
+    }
+
+    &__form{
+        @include myFlex();
+        @include FlexOptions(100%, wrap);
+        @include center();
+
+        input{
+            @include FlexOptions(100%);
+            margin: 1%;
+            font-size: pxToRem(20);
+            padding: 1% 0 1% 3%;
+            background-color: $c-Denim;
+            color: $c-Malibu;
+            border: 1px $c-Malibu solid;
+            border-radius: 10px;
+
+            &::placeholder{
+                color: $c-Malibu;
+            }
+
+            &:focus{
+                outline:none;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: $c-White;
+            margin-left: 60%;
+        }
+
+        button{
+            display: block;
+            margin: 3% auto -10%;
+            background-color: $c-RadicalRed;
+            border: none;
+            border-radius: 15px;
+            color: $c-White;
+            padding: 3%;
+            font-size: pxToRem(23);
+            width: 40%;
+            cursor: pointer;
+        }
+    }
+}

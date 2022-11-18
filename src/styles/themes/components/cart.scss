@@ -1,0 +1,212 @@
+.cart{
+    margin: 5%;
+
+    &__title{
+        text-align: center;
+        font-size: pxToRem(40);
+    }
+
+    &__divs{
+        @include myFlex();
+        height: 6px;
+        @include center();
+
+        &--blue{
+            width: 25%;
+            border-radius: 3px;
+            background-color: $c-CornflowerBlue;
+            margin-right: 0.3%;
+        }
+
+        &--red{
+            width: 8%;
+            border-radius: 3px;
+            background-color: $c-RadicalRed;
+        }
+    }
+
+    &__content{
+        @include myFlex();
+
+        &--delivery{
+            @include FlexOptions(50%);
+            @include center();
+            margin: 5%;
+            border: 2px $c-GrayNickel solid;
+            border-radius: 10px;
+            height: 130px;
+        }
+
+        &--truck{
+            font-size: 70px;
+            color: $c-RadicalRed;
+            margin: 0 auto;
+        }
+
+        &--text{
+            @include FlexOptions(70%);
+            display: block;
+            border-left: 2px $c-GrayNickel solid;
+            height: 100px;
+            width: 45%;
+
+            h2{
+                border-bottom: 2px $c-GrayNickel solid;
+                margin: 0 5% 3%;
+                width: 90%;
+                padding-bottom: 2%;
+
+                span{
+                    font-size: pxToRem(20);
+                    font-weight: 100;
+                    color: $c-GrayNickel;
+                }
+            }
+
+            p{
+                margin: 1.5% 5%;
+
+                span:first-child{
+                    font-weight: bolder
+                }
+
+                span:last-child{
+                    font-size: pxToRem(16);
+                    color: $c-GrayNickel;
+                }
+            }
+        }
+    }
+
+    &__totalprice{
+        background-color: $c-LighteningYellow;
+        border-radius: 10px;
+        margin-top: 15%;
+        padding: 2%;
+        width: 120%;
+        font-size: pxToRem(22);
+        text-align: center;
+
+        span{
+            font-weight: bolder;
+        }
+    }
+
+    &__przelewy{
+        @include myFlex();
+        background-color: $c-CornflowerBlue;
+        border-radius: 10px;
+        margin-top: 4%;
+        padding: 2%;
+        width: 120%;
+        font-size: pxToRem(18);
+        text-align: center;
+        color: $c-White;
+
+        span{
+            font-weight: bolder;
+        }
+
+        &--img{
+            width: 20%;
+            margin: 2%;
+            padding: 0;
+        }
+    }
+
+    &__discount{
+        @include myFlex();
+        background-color: $c-Atlantis;
+        border-radius: 10px;
+        margin-top: 4%;
+        padding: 2%;
+        width: 120%;
+        font-size: pxToRem(18);
+        text-align: center;
+        color: $c-White;
+
+        p{
+            font-weight: bolder;
+            @include FlexOptions(30%);
+        }
+
+        input{
+            @include FlexOptions(60%);
+            background-color: $c-Dell;
+            border: none;
+            border-radius: 10px;
+            height: 40px;
+            margin: 4%;
+        }
+    }
+
+    &__link{
+        border: none;
+        background-color: $c-RadicalRed;
+        border-radius: 10px;
+        margin-top: 4%;
+        padding: 2%;
+        width: 125%;
+        font-size: pxToRem(18);
+        text-align: center;
+        height: 50px;
+        cursor: pointer;
+
+        a{
+            text-decoration: none;
+            color: $c-White;
+        }
+    }
+}
+
+.cartitem{
+    @include myFlex();
+    @include FlexOptions(50%);
+    @include center();
+    margin: 5%;
+    border: 2px $c-GrayNickel solid;
+    border-radius: 10px;
+    height: 200px;
+
+    &__img{
+        width: 20%;
+        margin: 2%;
+    }
+
+    &__content{
+        border-left: 2px $c-GrayNickel solid;
+        height: 150px;
+        width: 45%;
+
+        &--title{
+            border-left: none;
+            border-bottom: 2px $c-GrayNickel solid;
+            height: auto;
+            margin: 0 5% 3%;
+            width: 80%;
+            padding-bottom: 2%;
+        }
+
+        p{
+            margin: 1.5% 5%;
+
+            span{
+                font-weight: bolder;
+            }
+        }
+
+        p:last-child{
+            margin-top: 6%;
+        }
+    }
+
+    &__button{
+        border: none;
+        border-radius: 10px;
+        background-color: $c-GrayNickel;
+        padding: 1.5%;
+        align-self: flex-start;
+        margin-top: 3%;
+        cursor: pointer;
+    }
+}

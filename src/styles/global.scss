@@ -1,0 +1,8 @@
+@import './fonts.scss';
+@import './normalize.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+body{
+    font-family: $f-Lato;
+}
