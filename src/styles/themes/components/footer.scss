@@ -1,94 +1,138 @@
-.footer{
-    @include myFlex();
-    background-image: url("./../../images/footer.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100vw 100%;
-    height: 250px;
-    color: $c-White;
-    padding-bottom: 2%;
+.footer {
+  @include myFlex();
+  background-image: url("./../../images/footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+  height: 250px;
+  color: $c-White;
+  padding-bottom: 2%;
 
-    &__contact{
-        margin: 5%;
+  &__contact {
+    margin: 5%;
 
-        p:first-of-type {
-            font-size: pxToRem(28);
-            font-weight: bolder;
-        }
+    p:first-of-type {
+      font-size: pxToRem(28);
+      font-weight: bolder;
+    }
+  }
+
+  &__info {
+    margin: 5% 15%;
+
+    p {
+      cursor: pointer;
     }
 
-    &__info{
-        margin: 5% 15%;
-
-        p{
-            cursor: pointer;
-        }
-
-        p:first-of-type {
-            font-size: pxToRem(20);
-            font-weight: bolder;
-            margin-bottom: 0;
-            padding-bottom: 4%;
-            cursor: default;
-        }
-
-        div{
-            background-color: $c-White;
-            width: 100%;
-            height: 2px;
-        }
+    p:first-of-type {
+      font-size: pxToRem(20);
+      font-weight: bolder;
+      margin-bottom: 0;
+      padding-bottom: 4%;
+      cursor: default;
     }
+
+    div {
+      background-color: $c-White;
+      width: 100%;
+      height: 2px;
+    }
+  }
 }
 
-.sub{
-    margin: 5% 0;
-    color: $c-White;
+.sub {
+  margin: 5% 0;
+  color: $c-White;
 
-    &__title{
-        font-size: pxToRem(25);
-        font-weight: bolder;
-        margin-bottom: 0;
+  &__title {
+    font-size: pxToRem(25);
+    font-weight: bolder;
+    margin-bottom: 0;
+  }
+
+  &__form {
+    @include myFlex();
+    margin: 0;
+    background-color: $c-BrickRed;
+    width: 120%;
+    @include center();
+    padding: 5% 0;
+
+    input {
+      background-color: transparent;
+      border: none;
+      padding-left: 3%;
+      width: 60%;
+      color: $c-White;
+
+      &:focus {
+        outline: none !important;
+      }
+
+      &::placeholder {
+        color: $c-White;
+      }
     }
 
-    &__form{
-        @include myFlex();
-        margin: 0;
-        background-color: $c-BrickRed;
-        width: 120%;
-        @include center();
-        padding: 5% 0;
-
-        input{
-            background-color: transparent;
-            border: none;
-            padding-left: 3%;
-            width: 60%;
-            color: $c-White;
-
-            &:focus{
-                outline:none!important;
-            }
-
-            &::placeholder{
-                color: $c-White;
-            }
-        }
-
-        span{
-            font-size: pxToRem(28);
-            font-weight: bold;
-        }
-
-        button{
-            border: none;
-            background-color: transparent;
-            font-weight: bolder;
-            margin: 0 auto;
-
-            a{
-                text-decoration: none;
-                color: $c-White;
-            }
-        }
+    span {
+      font-size: pxToRem(28);
+      font-weight: bold;
     }
+
+    button {
+      border: none;
+      background-color: transparent;
+      font-weight: bolder;
+      margin: 0 auto;
+
+      a {
+        text-decoration: none;
+        color: $c-White;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    &__contact {
+      margin: 5% 0 5% 2%;
+
+      p:first-of-type {
+        font-size: pxToRem(24);
+      }
+    }
+    &__info {
+      margin: 9% 10%;
+    }
+  }
+  .sub__form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer {
+    &__contact {
+      margin: 10% 0 0 2%;
+
+      p:first-of-type {
+        font-size: pxToRem(20);
+      }
+    }
+    &__info {
+      margin: 9% 2% 0 8%;
+    }
+  }
+
+  .sub {
+    margin: 8% 0 0;
+
+    &__form {
+      width: 80%;
+      button a {
+        font-size: pxToRem(14);
+      }
+    }
+  }
 }

@@ -1,98 +1,120 @@
-.campaings{
-    margin: 3%;
-    text-align: center;
+.campaings {
+  margin: 3%;
+  text-align: center;
 
-    &__title{
-        font-size: pxToRem(40);
-        margin-bottom: 1%;
+  &__title {
+    font-size: pxToRem(40);
+    margin-bottom: 1%;
+  }
+
+  &__divs {
+    @include myFlex();
+    height: 6px;
+    @include center();
+
+    &--blue {
+      width: 25%;
+      border-radius: 3px;
+      background-color: $c-CornflowerBlue;
+      margin-right: 0.3%;
     }
 
-    &__divs{
-        @include myFlex();
-        height: 6px;
-        @include center();
-
-        &--blue{
-            width: 25%;
-            border-radius: 3px;
-            background-color: $c-CornflowerBlue;
-            margin-right: 0.3%;
-        }
-
-        &--red{
-            width: 8%;
-            border-radius: 3px;
-            background-color: $c-RadicalRed;
-        }
+    &--red {
+      width: 8%;
+      border-radius: 3px;
+      background-color: $c-RadicalRed;
     }
+  }
 
-    &__products{
-        @include myFlex();
-        @include FlexOptions(80%, wrap);
-        @include center();
-        margin: 5%;
-    }
+  &__products {
+    @include myFlex();
+    @include FlexOptions(80%, wrap);
+    @include center();
+    margin: 5%;
+  }
 }
 
-.camproduct{
-    @include FlexOptions(25%);
-    text-decoration: none;
-    border: 1.5px $c-Black solid;
-    border-radius: 10px;
-    margin: 1.5%;
-    height: 370px;
-    color: $c-Black;
+.camproduct {
+  @include FlexOptions(25%);
+  text-decoration: none;
+  border: 1.5px $c-Black solid;
+  border-radius: 10px;
+  margin: 1.5%;
+  height: 370px;
+  color: $c-Black;
 
-    &__img{
-        width: 60%;
-        height: 150px;
-        margin: 5%;
+  &__img {
+    width: 60%;
+    height: 150px;
+    margin: 5%;
+  }
+
+  &__title {
+    font-family: $f-Rubik;
+    font-size: pxToRem(28);
+    margin-bottom: 0;
+  }
+
+  &__mademe {
+    font-size: pxToRem(16);
+    margin: 0;
+  }
+
+  &__div {
+    position: relative;
+
+    &--info {
+      border-radius: 10px;
+      font-weight: bold;
+      background-color: $c-LighteningYellow;
+      width: 80%;
+      padding: 4%;
+      margin: 3% auto;
+
+      span {
+        font-weight: 100;
+      }
     }
 
-    &__title{
-        font-family: $f-Rubik;
-        font-size: pxToRem(28);
-        margin-bottom: 0;
+    &--button {
+      position: absolute;
+      top: 0.5%;
+      left: 5%;
+      width: 90%;
+      border: none;
+      border-radius: 10px;
+      background-color: $c-RadicalRed;
+      color: $c-White;
+      height: 100px;
+      cursor: pointer;
+      font-weight: bold;
+      opacity: 0;
+
+      &:hover {
+        opacity: 1;
+      }
     }
+  }
+}
 
-    &__mademe{
-        font-size: pxToRem(16);
-        margin: 0;
+@media only screen and (max-width: 1200px) {
+  .campaings__products {
+    margin: 5% 0;
+  }
+  .camproduct {
+    flex-basis: 30%;
+    height: 420px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .campaings {
+    margin: 20% 3% 3%;
+  }
+  .camproduct {
+    flex-basis: 45%;
+    &__title {
+      font-size: pxToRem(22);
     }
-
-    &__div{
-        position: relative;
-
-        &--info{
-            border-radius: 10px;
-            font-weight: bold;
-            background-color: $c-LighteningYellow;
-            width: 80%;
-            padding: 4%;
-            margin: 3% auto;
-
-            span{
-                font-weight: 100;
-            } 
-        }
-
-        &--button{
-            position: absolute;
-            top: 0.5%;
-            left: 5%;
-            width: 90%;
-            border: none;
-            border-radius: 10px;
-            background-color: $c-RadicalRed;
-            color: $c-White;
-            height: 100px;
-            cursor: pointer;
-            font-weight: bold;
-            opacity: 0;
-
-            &:hover{
-                opacity: 1;
-            }
-        }
-    }
+  }
 }

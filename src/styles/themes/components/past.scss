@@ -1,68 +1,86 @@
-.past{
-    margin: 3%;
-    text-align: center;
+.past {
+  margin: 3%;
+  text-align: center;
 
-    &__title{
-        font-size: pxToRem(40);
-        margin-bottom: 1%;
+  &__title {
+    font-size: pxToRem(40);
+    margin-bottom: 1%;
+  }
+
+  &__divs {
+    @include myFlex();
+    height: 6px;
+    @include center();
+
+    &--blue {
+      width: 8%;
+      border-radius: 3px;
+      background-color: $c-TurquoiseBlue;
+      margin-right: 0.3%;
     }
 
-    &__divs{
-        @include myFlex();
-        height: 6px;
-        @include center();
-
-        &--blue{
-            width: 8%;
-            border-radius: 3px;
-            background-color: $c-TurquoiseBlue;
-            margin-right: 0.3%;
-        }
-
-        &--yellow{
-            width: 25%;
-            border-radius: 3px;
-            background-color: $c-LighteningYellow;
-        }
+    &--yellow {
+      width: 25%;
+      border-radius: 3px;
+      background-color: $c-LighteningYellow;
     }
+  }
 }
 
-.pastproduct{
-    text-decoration: none;
-    @include FlexOptions(25%);
-    border: 1.5px $c-Black solid;
+.pastproduct {
+  text-decoration: none;
+  @include FlexOptions(25%);
+  border: 1.5px $c-Black solid;
+  border-radius: 10px;
+  margin: 1.5%;
+  height: 350px;
+  color: $c-Black;
+
+  &__img {
+    width: 60%;
+    height: 170px;
+    margin: 5%;
+  }
+
+  &__title {
+    font-family: $f-Rubik;
+    font-size: pxToRem(28);
+    margin-bottom: 0;
+  }
+
+  &__mademe {
+    font-size: pxToRem(16);
+    margin: 0;
+  }
+
+  &__info {
     border-radius: 10px;
-    margin: 1.5%;
-    height: 350px;
-    color: $c-Black;
+    font-weight: bold;
+    background-color: $c-LighteningYellow;
+    width: 80%;
+    padding: 4%;
+    margin: 3% auto;
 
-    &__img{
-        width: 60%;
-        height: 170px;
-        margin: 5%;
+    span {
+      font-weight: 100;
     }
-        
-    &__title{
-        font-family: $f-Rubik;
-        font-size: pxToRem(28);
-        margin-bottom: 0;
-    }
+  }
+}
 
-    &__mademe{
-        font-size: pxToRem(16);
-        margin: 0;
-    }
+@media only screen and (max-width: 1200px) {
+  .pastproduct {
+    flex-basis: 30%;
+  }
+}
 
-    &__info{
-        border-radius: 10px;
-        font-weight: bold;
-        background-color: $c-LighteningYellow;
-        width: 80%;
-        padding: 4%;
-        margin: 3% auto;
+@media only screen and (max-width: 1000px) {
+  .pastproduct {
+    height: 370px;
+  }
+}
 
-        span{
-            font-weight: 100;
-        } 
-    }
+@media only screen and (max-width: 500px) {
+  .pastproduct {
+    flex-basis: 45%;
+  }
 }
