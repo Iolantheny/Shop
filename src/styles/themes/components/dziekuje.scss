@@ -1,35 +1,36 @@
-.dziekuje{
-    color: $c-White;
-    text-align: -webkit-center;
-    margin-bottom: 20%;
-    
-    &__pikachu{
-        width: 15%;
+.dziekuje {
+  color: $c-White;
+  text-align: -webkit-center;
+  margin-bottom: 20%;
+  height: 40vh;
+
+  &__pikachu {
+    width: 15%;
+  }
+
+  &__container {
+    position: absolute;
+    background-color: $c-Sushi;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    margin: -6% auto;
+    width: 50%;
+
+    p {
+      margin: 2% 5%;
     }
-    
-    &__container{
-        position: absolute;
-        background-color: $c-Sushi;
-        border-radius: 10px;
-        left: 0; 
-        right: 0; 
-        margin: -6% auto;
-        width: 50%;
 
-        p{
-            margin: 2% 5%;
-        }
-
-        p:last-of-type{
-            margin-bottom: 12%;
-        }
-
-        &--link{
-            text-decoration: none;
-            background-color: $c-RadicalRed;
-            width: 50%;
-            color: $c-White;
-            padding: 3%;
-        }
+    p:last-of-type {
+      margin-bottom: 12%;
     }
+
+    &--link {
+      text-decoration: none;
+      background-color: $c-RadicalRed;
+      width: 50%;
+      color: $c-White;
+      padding: 3%;
+    }
+  }
 }
