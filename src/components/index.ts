@@ -4,8 +4,8 @@ import Campaings from "./Campaings";
 import Footer from "./Footer";
 import Soon from "./Soon";
 import Past from "./Past";
-import Unikalni from "./Unikalni";
-import Subskrybuj from "./Subskrybuj";
+import Unicate from "./Unicate";
+import Subscribe from "./Subscribe";
 import Content1 from "./Content1";
 import Content2 from "./Content2";
 import Content3 from "./Content3";
@@ -27,8 +27,8 @@ export const Components = {
     Footer,
     Soon,
     Past,
-    Unikalni,
-    Subskrybuj,
+    Unicate,
+    Subscribe,
     Content1,
     Content2,
     Content3,

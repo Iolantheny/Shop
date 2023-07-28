@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import { Link, navigate } from "gatsby";
 
-const Rejestracja = () => {
+const Register = () => {
   const [name, setName] = useState<string>("");
   const [surname, setSurname] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -63,4 +63,4 @@ const Rejestracja = () => {
   );
 };
 
-export default Rejestracja;
+export default Register;

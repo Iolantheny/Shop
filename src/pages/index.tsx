@@ -1,10 +1,9 @@
 import React from "react";
-import "./../styles/themes/theme.scss"
+import "./../styles/themes/theme.scss";
 import { Components } from "./../components";
 
 const IndexPage = () => {
-
-  const { MainHeader, Campaings, Footer, Soon, Past, Unikalni } = Components;
+  const { MainHeader, Campaings, Footer, Soon, Past, Unicate } = Components;
 
   return (
     <>
@@ -12,10 +11,10 @@ const IndexPage = () => {
       <Campaings />
       <Soon />
       <Past />
-      <Unikalni />
+      <Unicate />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

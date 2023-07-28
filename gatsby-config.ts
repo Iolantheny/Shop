@@ -16,12 +16,8 @@ const config: GatsbyConfig = {
       "accessToken": process.env.ACCESSS_TOKEN,
       "spaceId": process.env.SPACE_ID
     }
-  }, "gatsby-plugin-sass", {
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      "trackingId": process.env.TRACKING_ID
-    }
-  }, "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
+  }, "gatsby-plugin-sass",
+   "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/pikachu.png"

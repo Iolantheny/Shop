@@ -2,10 +2,10 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import { useShoppingCart } from "../context";
-import { Components } from "./../components";
+import { Components } from "../components";
 import { FaTruckMoving } from "react-icons/fa";
 
-const Koszyk = ({ data }) => {
+const Cart = ({ data }: any) => {
   const { Layout, CartItem } = Components;
 
   const { cartItems } = useShoppingCart();
@@ -117,4 +117,4 @@ export const query = graphql`
   }
 `;
 
-export default Koszyk;
+export default Cart;
